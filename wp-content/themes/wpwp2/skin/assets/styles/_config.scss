@@ -1,0 +1,16 @@
+// Media blender
+$media-breakpoints: (
+  mobile: 0 767,
+  tablet: 768 1199,
+  desktop: 1200 1365,
+  large: 1366
+);
+
+
+// Susy
+$susy: (
+  columns: 12,
+  gutters: 1/12,
+  gutter-position: after,
+  global-box-sizing: border-box
+);

@@ -1,0 +1,8 @@
+@import 'class-names';
+
+
+[class^='icon-'],
+[class*=' icon-'] {
+  @extend %font-icon;
+}
+

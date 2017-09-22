@@ -1,0 +1,16 @@
+
+.btn {
+  @extend %button-reset;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+
+  transition: {
+    property: background-color, color, border-color;
+    timing-function: ease-in;
+    duration: map-get($transition, s);
+  }
+
+}

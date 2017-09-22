@@ -1,0 +1,60 @@
+
+
+//Base
+$base-font-size: 20px;
+$base-font-family: 'Open Sans';
+
+//Colors
+$color-black: #000000;
+$color-white: #FFFFFF;
+
+$color-01: #C3151B;    // crvena
+$color-02: #2F2F2F;    // plava
+$color-03: #424446;    // ...
+$color-04: #71787C;    // ...
+$color-05: #A9B0B5;    // ...
+$color-06: #BDC3C7;    // ...
+
+
+//Container
+$base-content-padding: 15px;
+$base-content-full-width: 1170px;
+$base-content-width: $base-content-full-width + ($base-content-padding*2);
+
+
+//Typography
+$typography-map: (
+  default:        $base-font-size,
+  huge:           44px,
+  big:            36px,
+  larger:         28px,
+  large:          24px,
+  medium:         18px,
+  small:          16px,
+  smaller:        14px,
+  smallest:       13px,
+  tiny:           10px
+);
+
+$weight-map: (
+  normal: 400,
+  semi-bold: 600,
+  bold: 700,
+  extra: 800
+);
+
+//WP admin bar
+$wpAdminBar-sm: 782px;
+
+// transitions
+$transition: (
+  s: 0.2s,
+  m: 0.4s,
+  l: 0.6s,
+  xl: 0.8s,
+  xxl: 1s
+);
+
+
+// z-index
+$header-index: 100;

@@ -1,0 +1,47 @@
+@mixin box-sizing($box-model) {
+  box-sizing: $box-model;
+}
+
+@mixin site-container($max-width: $base-content-width) {
+  @include container($max-width);
+  @extend %site-padding;
+}
+
+
+//For better font smoothing and fix button weight problem on mac
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
+
+
+
+// Placeholder mixin
+/* stylelint-disable */
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content
+  }
+
+  :-moz-placeholder {
+    @content
+  }
+
+  ::-moz-placeholder {
+    @content
+  }
+
+  :-ms-input-placeholder {
+    @content
+  }
+}
+
+/* stylelint-enable */

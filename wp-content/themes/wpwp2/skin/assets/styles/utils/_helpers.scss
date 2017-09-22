@@ -1,0 +1,55 @@
+.hidden {
+    display: none !important;
+}
+
+.desktopHidden {
+    @include media(desktop up) {
+        display: none !important;
+    }
+}
+
+.mobileHidden {
+    @include media(desktop down) {
+        display: none !important;
+    }
+}
+
+
+
+// Rotate helpers
+.u-orientation--0 {
+  transform: rotate(0);
+}
+
+.u-orientation--90{
+  transform: rotate(90deg);
+}
+
+.u-orientation--180 {
+  transform: rotate(180deg);
+}
+
+.u-orientation--270 {
+  transform: rotate(-90deg);
+}
+
+// Utility for responive videos
+.u {
+  &-responive-video {
+    position: relative;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+
+    iframe { /* stylelint-disable-line selector-no-type */
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}
